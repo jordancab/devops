@@ -3,4 +3,7 @@ uvicorn
 pydantic
 pytest
 flake8
+HTTPException
 requests
+httpx
+black
