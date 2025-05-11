@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.models import Item, User
-from requests import HTTPException
+from fastapi import HTTPException
 app = FastAPI()
 
 items = []
