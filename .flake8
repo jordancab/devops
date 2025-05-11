@@ -1,0 +1,14 @@
+[flake8]
+max-line-length = 100
+exclude = 
+    .git,
+    __pycache__,
+    env,
+    venv,
+    .venv,
+    .mypy_cache,
+    .pytest_cache,
+    .github
+
+# Optionnel : ignorer certains warnings spécifiques (ex : E203, W503 souvent liés à Black)
+extend-ignore = E203, W503

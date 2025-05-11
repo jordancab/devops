@@ -1,10 +1,22 @@
 from fastapi import FastAPI
 from app.models import Item, User
 from fastapi import HTTPException
+
 app = FastAPI()
 
-items = []
-users = []
+items = [
+    Item(id=1, name="Laptop", price=1299.99, in_stock=True),
+    Item(id=2, name="Mouse", price=25.50, in_stock=True),
+    Item(id=3, name="Mechanical Keyboard", price=89.90, in_stock=False),
+    Item(id=4, name='Monitor 24"', price=179.00, in_stock=True),
+    Item(id=5, name="USB-C Hub", price=45.00, in_stock=False),
+]
+
+users = [
+    User(id=1, username="alice", email="alice@example.com"),
+    User(id=2, username="bob", email="bob@example.com"),
+    User(id=3, username="charlie", email="charlie@example.com"),
+]
 
 
 @app.get("/items")
